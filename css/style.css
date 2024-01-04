@@ -1661,6 +1661,10 @@ main {
 }
 
 @media (min-width: 491px) and (max-width: 620px) {
+    .containerPadre {
+        padding-top: 100px;
+    }
+
     .container {
         width: 400px;
     }
@@ -1687,6 +1691,10 @@ main {
 }
 
 @media (min-width: 431px) and (max-width: 490px) {
+    .containerPadre {
+        padding-top: 90px;
+    }
+
     .container {
         width: 300px;
         height: 500px;
@@ -1735,6 +1743,10 @@ main {
 }
 
 @media (min-width: 391px) and (max-width: 430px) {
+    .containerPadre {
+        padding-top: 90px;
+    }
+
     .container {
         width: 300px;
         height: 500px;
@@ -1784,6 +1796,10 @@ main {
 }
 
 @media (max-width: 390px) {
+    .containerPadre {
+        padding-top: 90px;
+    }
+
     .container {
         width: 300px;
         height: 500px;
