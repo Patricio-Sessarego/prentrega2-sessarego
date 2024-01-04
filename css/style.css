@@ -1,0 +1,2418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100&display=swap');
+
+/*HR*/
+.hrrr {
+    box-shadow: 3px 3px 5px 1px whitesmoke, -3px -3px 5px 1px whitesmoke, 3px -3px 5px 1px whitesmoke, -3px 3px 5px 1px whitesmoke;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.hrFooter {
+    box-shadow: 3px 3px 5px 1px whitesmoke, -3px -3px 5px 1px whitesmoke, 3px -3px 5px 1px whitesmoke, -3px 3px 5px 1px whitesmoke;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+/*HEADER*/
+.logoImg {
+    grid-area: imgLogo;
+}
+
+.navBarHeader {
+    grid-area: navBarHeader;
+}
+
+.navBarHeaderCelular {
+    grid-area: navBarHeaderCelular;
+}
+
+.searchBarContainer {
+    grid-area: searchBar;
+}
+
+.searchTool {
+    border-radius: 20px;
+}
+
+.navBarHeaderCelular {
+    display: none;
+}
+
+.barraNavCelular {
+    display: none;
+}
+
+.listaHeaderCelular {
+    display: none;
+}
+
+.navegacionCelular {
+    display: none;
+}
+
+.itemNavCelular {
+    display: none;
+}
+
+.primerItemNavCelular {
+    display: none;
+}
+
+.imgLogo {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    background-color: #222222;
+    width: 200px;
+    height: 150px;
+}
+
+.headerContainer {
+    box-shadow: 3px 3px 5px 0px whitesmoke;
+    background-color: #222222;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 75px 75px;
+    grid-template-areas: 
+    "imgLogo navBarHeader"
+    "imgLogo searchBar";
+}
+
+.barraNav {
+    background-color: #222222;
+    justify-content: flex-end;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.navegacion {
+    background-color: #222222;
+    color: whitesmoke;
+}
+
+.itemNav {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.navegacion {
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    transition: color 0.1s ease-in-out, transform 0.1s ease-in-out; 
+}
+
+.listaHeader:first-child {
+    border-left: 1px solid whitesmoke;
+}
+
+.listaHeader:last-child {
+    border-right: 1px solid whitesmoke;
+}
+
+.barraNavCelular {
+    background-color: #222222;
+    justify-content: flex-end;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.listaHeaderCelular {
+    justify-content: flex-end;
+}
+
+.navegacionCelular {
+    color: whitesmoke;
+    background-color: #222222;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    transition: color 0.1s ease-in-out, transform 0.1s ease-in-out; 
+}
+
+.itemNavCelular {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: color 0.1s ease-in-out, transform 0.1s ease-in-out; 
+}
+
+.listaHeaderCelular:first-child {
+    border-left: 1px solid whitesmoke;
+}
+
+.listaHeaderCelular:last-child {
+    border-right: 1px solid whitesmoke;
+}
+
+.searchBarContainer {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchBar {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 395px;
+}
+
+.btnSearchBar {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 0;
+}
+/*PSEUDOCLASES HEADER*/
+.itemNav:visited {
+    color: whitesmoke;
+}
+
+.itemNav:focus {
+    transform: scale(1.0);
+    color: whitesmoke;
+}
+
+.navegacion:hover {
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    transform: scale(1.1);
+}
+
+.itemNav:hover {
+    transform: scale(1.1);
+    color: #FAEBD7;
+}
+
+.itemNavCelular:visited {
+    color: whitesmoke;
+}
+
+.itemNavCelular:focus {
+    transform: scale(1.0);
+    color: whitesmoke;
+}
+
+.navegacionCelular:hover {
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    transform: scale(1.1);
+}
+
+.itemNavCelular:hover {
+    transform: scale(1.1);
+    color: #FAEBD7;
+}
+
+.imgLogo:hover {
+    transform: scale(1.1);
+}
+
+.searchBar:hover {
+    box-shadow: 
+    3px 3px 10px rgba(255, 255, 255, 0.5),
+    3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.searchTool:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btnSearchBar:hover {
+    color: black;
+}
+
+/*MEDIA QUERIES HEADER*/
+@media (min-width: 411px) and (max-width: 600px) {
+    .navBarHeader {
+        display: none;
+    }
+
+    .barraNav {
+        display: none;
+    }
+
+    .listaHeader {
+        display: none;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    .itemNav {
+        display: none;
+    }
+
+    .primerItem {
+        display: none;
+    }
+
+    .navBarHeaderCelular {
+        display: inline;
+    }
+
+    .barraNavCelular {
+        display: inline;
+    }
+
+    .listaHeaderCelular {
+        display: inline;
+    }
+
+    .navegacionCelular {
+        display: inline;
+    }
+
+    .itemNavCelular {
+        display: inline;
+    }
+
+    .primerItemNavCelular {
+        display: inline;
+    }
+
+    .headerContainer {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 75px 75px;
+        grid-template-areas: 
+        "imgLogo navBarHeaderCelular"
+        "imgLogo searchBar";
+    }
+
+    .navBarHeaderCelular {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .searchBar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 410px) {
+    .navBarHeader {
+        display: none;
+    }
+
+    .barraNav {
+        display: none;
+    }
+
+    .listaHeader {
+        display: none;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    .itemNav {
+        display: none;
+    }
+
+    .primerItem {
+        display: none;
+    }
+
+    .navBarHeaderCelular {
+        display: inline;
+    }
+
+    .barraNavCelular {
+        display: inline;
+    }
+
+    .listaHeaderCelular {
+        display: inline;
+    }
+
+    .navegacionCelular {
+        display: inline;
+    }
+
+    .itemNavCelular {
+        display: inline;
+    }
+
+    .primerItemNavCelular {
+        display: inline;
+    }
+
+    .headerContainer {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 75px 75px;
+        grid-template-areas: 
+        "imgLogo navBarHeaderCelular"
+        "imgLogo searchBar";
+    }
+
+    .imgLogo {
+        width: 150px;
+        height: 100px;
+    }
+
+    .navBarHeaderCelular {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .searchBar {
+        width: 200px;
+        margin-right: 0px;
+    }
+
+    .barraNavCelular {
+        margin-right: 0px;
+    }
+}
+/*FOOTER*/
+footer {
+    background-color: black;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.divListaFooter {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.linkFooter {
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    background-color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: whitesmoke;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.10rem; 
+}
+
+.divListaFooter:first-child {
+    border-left: 1px solid whitesmoke;
+}
+
+.divListaFooter:last-child {
+    border-right: 1px solid whitesmoke;
+}
+
+.logoWpp {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.navFooterCelular {
+    display: none;
+}
+
+.divListaFooterCelular {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.linkFooterCelular {
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    background-color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: whitesmoke;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.10rem; 
+}
+
+.divListaFooterCelular:first-child {
+    border-left: 1px solid whitesmoke;
+}
+
+.divListaFooterCelular:last-child {
+    border-right: 1px solid whitesmoke;
+}
+
+.logoWppCelular {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/*PSEUDOCLASES FOOTER*/
+.linkFooter:hover {
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    transform: scale(1.1);
+    color: #FAEBD7;
+}
+
+.linkFooterCelular:hover {
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    transform: scale(1.1);
+    color: #FAEBD7;
+}
+/*MEDIA QUERIES FOOTER*/
+@media (min-width: 511px) and (max-width: 800px) {
+    .navFooter {
+        display: none;
+    }
+
+    .iconoWpp {
+        display: none;
+    }
+
+    .navFooterCelular {
+        display: inline;
+    }
+
+    .logoWppCelular {
+        height: 65px;
+        width: 65px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 510px) {
+    .navFooter {
+        display: none;
+    }
+
+    .iconoWpp {
+        display: none;
+    }
+
+    .navFooterCelular {
+        display: inline;
+    }
+
+    .logoWppCelular {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .hrrr {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .hrFooter {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navFooter {
+        display: none;
+    }
+
+    .logoWppCelular {
+        display: none;
+    }
+
+    .iconoWpp {
+        display: inline;
+    }
+
+    .navFooterCelular {
+        display: inline;
+    }
+
+}
+/*INDEX.HTML*/
+main {
+    background-color: black;
+}
+/*CARROUSEL*/
+.carousel {
+    width: 100%;
+}
+
+.imgCarrousel {
+    width: 100%;
+    height: 400px;
+}
+
+/*PRODUCTOS | CARDS*/
+.productoUno {
+    grid-area: productoUno;
+}
+
+.productoDos {
+    grid-area: productoDos;
+}
+
+.productoTres {
+    grid-area: productoTres;
+}
+
+.productoCuatro {
+    grid-area: productoCuatro;
+}
+
+.productoCinco {
+    grid-area: productoCinco;
+}
+
+.productoSeis {
+    grid-area: productoSeis;
+}
+
+.productos {
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 480px 480px;
+    grid-template-areas: 
+    "productoUno productoDos productoTres"
+    "productoCuatro productoCinco productoSeis";
+    column-gap: 100px;
+    row-gap: 75px;
+    text-align: center;
+}
+
+.producto {
+    border: 3px solid #333;
+    background-color: #222222;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    box-shadow: 3px 3px 5px 0px whitesmoke, -3px -3px 5px 0px whitesmoke, 3px -3px 5px 0px whitesmoke, -3px 3px 5px 0px whitesmoke;
+}
+
+.productoDos img:nth-child(1) {
+    margin-top: 50px;
+    margin-bottom: 77px;
+}
+
+.productoCuatro img:nth-child(1) {
+    margin-top: 70px;
+    margin-bottom: 74px;
+}
+
+.productoSeis img:nth-child(1) {
+    height: 324px;
+}
+
+.fotoProducto {
+    object-fit: contain;
+    width: 100%;
+}
+
+.nombreProducto {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.precioProducto {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    color: whitesmoke;
+    font-size: 1.25rem;
+    margin: 5px;
+}
+
+.btnComprar {
+    background-color: #333;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+}
+/*PSEUDOCLASES INDEX.HTML*/
+.producto:hover {
+    transform: scale(1.1);
+    box-shadow: 
+    3px 3px 15px rgba(255, 255, 255, 0.5),
+    3px -3px 15px rgba(255, 255, 255, 0.5), 
+    -3px -3px 15px rgba(255, 255, 255, 0.5), 
+    -3px 3px 15px rgba(255, 255, 255, 0.5); 
+}
+
+.btnComprar:hover {
+    box-shadow: 
+    3px 3px 10px rgba(255, 255, 255, 0.5),
+    3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.nombreProducto:hover {
+    color: #FAEBD7;
+}
+
+.precioProducto:hover {
+    color: #FAEBD7;
+}
+/*MEDIA QUERIES INDEX.HTML*/
+@media (min-width: 1001px) and (max-width: 1433px) {
+    .imgCarrousel {
+        width: 100%;
+        height: 350px;
+    }
+
+    .productos {
+        grid-template-columns: 330px 330px;
+        grid-template-rows: repeat(3, 480px);
+        grid-template-areas: 
+        "productoUno productoDos"
+        "productoTres productoCuatro"
+        "productoCinco productoSeis";
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+    .imgCarrousel {
+        width: 100%;
+        height: 300px;
+    }
+
+    .productos {
+        grid-template-columns: 330px 330px;
+        grid-template-rows: repeat(3, 480px);
+        grid-template-areas: 
+        "productoUno productoDos"
+        "productoTres productoCuatro"
+        "productoCinco productoSeis";
+    }
+
+    .logoWpp {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+    .imgCarrousel {
+        width: 100%;
+        height: 300px;
+    }
+
+    .productos {
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 480px);
+        grid-template-areas: 
+        "productoUno"
+        "productoDos"
+        "productoTres"
+        "productoCuatro"
+        "productoCinco"
+        "productoSeis";
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .imgCarrousel {
+        width: 100%;
+        height: 250px;
+    }
+
+    .productos {
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 480px);
+        grid-template-areas: 
+        "productoUno"
+        "productoDos"
+        "productoTres"
+        "productoCuatro"
+        "productoCinco"
+        "productoSeis";
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+    .imgCarrousel {
+        width: 100%;
+        height: 200px;
+    }
+
+    .productos {
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 480px);
+        grid-template-areas: 
+        "productoUno"
+        "productoDos"
+        "productoTres"
+        "productoCuatro"
+        "productoCinco"
+        "productoSeis";
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .imgCarrousel {
+        width: 100%;
+        height: 150px;
+    }
+
+    .productos {
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 480px);
+        grid-template-areas: 
+        "productoUno"
+        "productoDos"
+        "productoTres"
+        "productoCuatro"
+        "productoCinco"
+        "productoSeis";
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 500px) {
+    .imgCarrousel {
+        width: 100%;
+        height: 125px;
+    }
+
+    .productos {
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 480px);
+        grid-template-areas: 
+        "productoUno"
+        "productoDos"
+        "productoTres"
+        "productoCuatro"
+        "productoCinco"
+        "productoSeis";
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 390px) {
+    .imgCarrousel {
+        width: 100%;
+        height: 100px;
+    }
+
+    .productos {
+        grid-template-columns: 275px;
+        grid-template-rows: repeat(6, 420px);
+        grid-template-areas: 
+        "productoUno"
+        "productoDos"
+        "productoTres"
+        "productoCuatro"
+        "productoCinco"
+        "productoSeis";
+    }
+
+    .productoUno img:nth-child(1){
+        height: 230px;
+    }
+
+    .productoDos img:nth-child(1){
+        height: 230px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .productoCuatro img:nth-child(1) {
+        height: 230px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .productoCinco img:nth-child(1) {
+        height: 230px;
+    }
+
+    .productoSeis img:nth-child(1) {
+        height: 230px;
+    }
+
+    .hrrr {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .hrFooter {
+        margin-top: 50px;
+    }
+}
+/*COMPRA-PRODUCTO.HTML*/
+.hrCompraProducto {
+    background-color: black;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.logoWppCompraProducto {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+}
+.imgPrincipal {
+    grid-area: imgPrincipal;
+}
+
+.imgSecundariaUno {
+    grid-area: imgSecundariaUno;
+}
+
+.imgSecundariaDos {
+    grid-area: imgSecundariaDos;
+}
+
+.imgSecundariaTres {
+    grid-area: imgSecundariaTres;
+}
+
+.imgSecundariaCuatro {
+    grid-area: imgSecundariaCuatro;
+}
+
+.productoNombre {
+    grid-area: nombreProducto;
+}
+
+.productoPrecio {
+    grid-area: precioProducto;
+}
+
+.comprarBtn {
+    grid-area: botonComprar;
+}
+
+.caracteristicasProducto {
+    grid-area: caracteristicasProducto;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 640px;
+    padding-top: 100px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 100px 400px 300px;
+    grid-template-rows: 60px 60px repeat(3, 120px);
+    grid-template-areas: 
+    "imgSecundariaUno imgPrincipal nombreProducto"
+    "imgSecundariaUno imgPrincipal precioProducto"
+    "imgSecundariaDos imgPrincipal caracteristicasProducto"
+    "imgSecundariaTres imgPrincipal caracteristicasProducto"
+    "imgSecundariaCuatro imgPrincipal botonComprar";
+    padding: 40px 20px;
+    column-gap: 40px;
+    border-radius: 8px;
+    background-color: #1F1F1F;
+}
+
+.imgPrincipal {
+    width: 400px;
+    height: 460px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.imgSecundaria {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.productoNombre {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.productoPrecio {
+    font-size: 1.5rem;
+}
+
+.caracteristica {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.containerComprarBtn {
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #1F1F1F;
+}
+
+.comprarBtn {
+    width: 290px;
+    cursor: pointer;
+    margin-top: 50px;
+    color: #1F1F1F;
+    font-weight: bold;
+    padding: 10px 0px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+/*PSEUDOCLASES COMPRA-PRODUCTO.HTML*/
+.imgSecundaria:hover {
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+
+.imgPrincipal:hover {
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+
+.comprarBtn:hover {
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+/*MEDIA QUERIES COMPRA-PRODUCTO.HTML*/
+@media (min-width: 951px) and (max-width: 1160px) {
+    .logoWppCompraProducto {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 55px;
+        width: 55px;
+    }
+}
+
+@media(min-width: 951px) and (max-width: 1070px) {
+    .navFooterCompraProducto {
+        display: none;
+    }
+
+    .logoWppCelularCompraProducto {
+        display: none;
+    }
+
+    .iconoWppCompraProducto {
+        display: inline;
+    }
+
+    .navFooterCelularCompraProducto {
+        display: inline;
+    }
+}
+
+@media (min-width: 731px) and (max-width: 950px) {
+    .mainContainer {
+        height: 1010px;
+    }
+
+    .gridContainer {
+        grid-template-columns: 100px 400px;
+        grid-template-rows: repeat(4, 120px) 60px 60px 60px 210px;
+        grid-template-areas: 
+        "imgSecundariaUno imgPrincipal"
+        "imgSecundariaDos imgPrincipal"
+        "imgSecundariaTres imgPrincipal"
+        "imgSecundariaCuatro imgPrincipal"
+        "nombreProducto nombreProducto"
+        "precioProducto precioProducto"
+        "botonComprar botonComprar"
+        "caracteristicasProducto caracteristicasProducto";
+    }
+
+    .productoNombre {
+        display: flex;
+        justify-content: center;
+    }
+
+    .productoPrecio {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerComprarBtn {
+        width: 540px;
+    }
+
+    .comprarBtn {
+        margin: 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    .comprarBtn:hover {
+        transform: scale(1.0);
+    }
+
+    .logoWppCelularCompraProducto {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 55px;
+        width: 55px;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 730px) {
+    .mainContainer {
+        height: 900px;
+    }
+
+    .gridContainer {
+        grid-template-columns: 50px 300px;
+        grid-template-rows: repeat(4, 90px) 60px 60px 60px 210px;
+        grid-template-areas: 
+        "imgSecundariaUno imgPrincipal"
+        "imgSecundariaDos imgPrincipal"
+        "imgSecundariaTres imgPrincipal"
+        "imgSecundariaCuatro imgPrincipal"
+        "nombreProducto nombreProducto"
+        "precioProducto precioProducto"
+        "botonComprar botonComprar"
+        "caracteristicasProducto caracteristicasProducto";
+    }
+
+    .imgPrincipal {
+        width: 300px;
+        height: 360px;
+    }
+
+    .imgSecundaria {
+        height: 50px;
+        width: 50px;
+        align-self: center;
+    }
+
+    .gridContainer img:nth-child(2) {
+        align-self: flex-start;
+    }
+
+    .gridContainer img:nth-child(5) {
+        align-self: flex-end;
+    }
+
+    .gridContainer img:nth-child(3) {
+        margin-bottom: 15px;
+    }
+
+    .gridContainer img:nth-child(4) {
+        margin-top: 15px;
+    }
+
+    .productoNombre {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productoPrecio {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerComprarBtn {
+        width: 390px;
+    }
+
+    .comprarBtn {
+        margin: 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    .logoWppCelularCompraProducto {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 55px;
+        width: 55px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 580px) {
+    .mainContainer {
+        height: 900px;
+    }
+
+    .gridContainer {
+        grid-template-columns: 50px 300px;
+        grid-template-rows: repeat(4, 90px) 60px 60px 60px 210px;
+        grid-template-areas: 
+        "imgSecundariaUno imgPrincipal"
+        "imgSecundariaDos imgPrincipal"
+        "imgSecundariaTres imgPrincipal"
+        "imgSecundariaCuatro imgPrincipal"
+        "nombreProducto nombreProducto"
+        "precioProducto precioProducto"
+        "botonComprar botonComprar"
+        "caracteristicasProducto caracteristicasProducto";
+    }
+
+    .imgPrincipal {
+        width: 300px;
+        height: 360px;
+    }
+
+    .imgSecundaria {
+        height: 50px;
+        width: 50px;
+        align-self: center;
+    }
+
+    .gridContainer img:nth-child(2) {
+        align-self: flex-start;
+    }
+
+    .gridContainer img:nth-child(5) {
+        align-self: flex-end;
+    }
+
+    .gridContainer img:nth-child(3) {
+        margin-bottom: 15px;
+    }
+
+    .gridContainer img:nth-child(4) {
+        margin-top: 15px;
+    }
+
+    .productoNombre {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productoPrecio {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerComprarBtn {
+        width: 390px;
+    }
+
+    .comprarBtn {
+        margin: 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    .logoWppCelularCompraProducto {
+        display: none;
+    }
+
+    .iconoWppCompraProducto {
+        display: inline;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainContainer {
+        height: 760px;
+    }
+
+    .gridContainer {
+        grid-template-columns: 50px 200px;
+        grid-template-rows: repeat(4, 65px) 60px 60px 60px 210px;
+        grid-template-areas: 
+        "imgSecundariaUno imgPrincipal"
+        "imgSecundariaDos imgPrincipal"
+        "imgSecundariaTres imgPrincipal"
+        "imgSecundariaCuatro imgPrincipal"
+        "nombreProducto nombreProducto"
+        "precioProducto precioProducto"
+        "botonComprar botonComprar"
+        "caracteristicasProducto caracteristicasProducto";
+        padding: 20px 20px;
+    }
+
+    .imgPrincipal {
+        width: 200px;
+        height: 260px;
+    }
+
+    .imgSecundaria {
+        height: 50px;
+        width: 50px;
+        align-self: center;
+    }
+
+    .gridContainer img:nth-child(2) {
+        align-self: flex-start;
+    }
+
+    .gridContainer img:nth-child(5) {
+        align-self: flex-end;
+    }
+
+    .gridContainer img:nth-child(3) {
+        margin-bottom: 0px;
+    }
+
+    .gridContainer img:nth-child(4) {
+        margin-top: 0px;
+    }
+
+    .productoNombre {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productoPrecio {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerComprarBtn {
+        width: 290px;
+    }
+
+    .comprarBtn {
+        margin: 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    .logoWppCelularCompraProducto {
+        display: none;
+    }
+
+    .iconoWppCompraProducto {
+        display: inline;
+    }
+}
+/*SIGN IN.HTML, LOG IN.HTML, SOPORTE.HTML*/
+.logoWppForm {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+}
+.containerPadre {
+    width: 100%;
+    display: grid;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    width: 800px;
+    height: 65vh;
+    background-color: #1F1F1F;
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 2px 50px 5px rgba(255, 255, 255, 0.5);
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h2Form {
+    margin-top: 100px;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.inp {
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.input {
+    width: 260px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    margin-top: 40px;
+    color: whitesmoke;
+}
+
+.submit {
+    border: none;
+    width: 290px;
+    cursor: pointer;
+    color: #1F1F1F;
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: 1.25rem;
+    border-radius: 40px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.msjForm {
+    font-size: 1rem;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.linkForm {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.msjSoporte {
+    width: 260px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    margin-top: 40px;
+    resize: vertical;
+    min-height: 20px;
+    max-height: 100px;
+    color: whitesmoke;
+}
+/*PSEUDOCLASES SIGN IN.HTML, LOG IN.HTML & SOPORTE.HTML*/
+.submit:hover {
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+
+.inp:hover {
+    color: whitesmoke;
+}
+/*MEDIA QUERIES SIGN IN.HTML, LOG IN.HTML & SOPORTE.HTML*/
+@media (min-width: 941px) and (max-width: 1090px) {
+    .logoWppForm {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .logoWppCelularForm {
+        display: none;
+    }
+
+    .navFooterCelularForm {
+        display: none;
+    }
+
+    .msjSoporte {
+        resize: vertical;
+        min-height: 20px;
+        max-height: 100px;
+    }
+}
+
+@media (min-width: 811px) and (max-width: 940px) {
+    .logoWppForm {
+        display: none;
+    }
+
+    .logoWppCelularForm {
+        display: none;
+    }
+
+    .navFooterForm {
+        display: none;
+    }
+
+    .iconoWppForm {
+        display: inline;
+    }
+
+    .navFooterCelularForm {
+        display: inline;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 810px) {
+    .container {
+        width: 600px;
+    }
+
+    .navFooterForm {
+        display: inline;
+    }
+
+    .logoWppForm {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .logoWppCelularForm {
+        display: none;
+    }
+
+    .navFooterCelularForm {
+        display: none;
+    }
+}
+
+@media (min-width: 621px) and (max-width: 750px) {
+    .navFooterForm {
+        display: none;
+    }
+
+    .logoWppForm {
+        display: none;
+    }
+
+    .logoWppCelularForm {
+        display: none;
+    }
+
+    .navFooterCelularForm {
+        display: inline;
+    }
+
+    .iconoWppForm {
+        display: inline;
+    }
+}
+
+@media (min-width: 491px) and (max-width: 620px) {
+    .container {
+        width: 400px;
+    }
+
+    .navFooterForm {
+        display: none;
+    }
+
+    .logoWppForm {
+        display: none;
+    }
+
+    .logoWppCelularForm {
+        display: none;
+    }
+
+    .navFooterCelularForm {
+        display: inline;
+    }
+
+    .iconoWppForm {
+        display: inline;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 490px) {
+    .container {
+        width: 300px;
+        height: 60vh;
+    }
+
+    .h2Form {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .input {
+        width: 200px;
+    }
+
+    .msjSoporte {
+        width: 200px;
+    }
+
+    .submit {
+        width: 230px;
+    }
+
+    .msjForm {
+        text-align: center;
+    }
+
+    .navFooterForm {
+        display: none;
+    }
+
+    .logoWppForm {
+        display: none;
+    }
+
+    .logoWppCelularForm {
+        display: none;
+    }
+
+    .navFooterCelularForm {
+        display: inline;
+    }
+
+    .iconoWppForm {
+        display: inline;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 430px) {
+    .container {
+        width: 300px;
+        height: 60vh;
+        box-shadow: 2px 2px 30px 5px rgba(255, 255, 255, 0.5);
+    }
+
+    .h2Form {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .input {
+        width: 200px;
+    }
+
+    .msjSoporte {
+        width: 200px;
+    }
+
+    .submit {
+        width: 230px;
+    }
+
+    .msjForm {
+        text-align: center;
+    }
+
+    .navFooterForm {
+        display: none;
+    }
+
+    .logoWppForm {
+        display: none;
+    }
+
+    .logoWppCelularForm {
+        display: none;
+    }
+
+    .navFooterCelularForm {
+        display: inline;
+    }
+
+    .iconoWppForm {
+        display: inline;
+    }
+}
+
+@media (max-width: 390px) {
+    .container {
+        width: 300px;
+        height: 60vh;
+        box-shadow: 2px 2px 10px 5px rgba(255, 255, 255, 0.5);
+    }
+
+    .h2Form {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .input {
+        width: 200px;
+    }
+
+    .msjSoporte {
+        width: 200px;
+    }
+
+    .submit {
+        width: 230px;
+    }
+
+    .msjForm {
+        text-align: center;
+    }
+
+    .navFooterForm {
+        display: none;
+    }
+
+    .logoWppForm {
+        display: none;
+    }
+
+    .logoWppCelularForm {
+        display: none;
+    }
+
+    .navFooterCelularForm {
+        display: inline;
+    }
+
+    .iconoWppForm {
+        display: inline;
+    }
+}
+
+/*OFERTAS.HTML*/
+.logoWppOfertas {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.navFooterCelularOfertas {
+    display: none;
+}
+
+.logoWppCelularOfertas {
+    display: none;
+}
+
+.ofertaProductoUno {
+    grid-area: ofertaProductoUno;
+}
+
+.ofertaProductoDos {
+    grid-area: ofertaProductoDos;
+}
+
+.ofertaProductoTres {
+    grid-area: ofertaProductoTres;
+}
+
+.ofertaProductoCuatro {
+    grid-area: ofertaProductoCuatro;
+}
+
+.ofertaProductoCinco {
+    grid-area: ofertaProductoCinco;
+}
+
+.ofertaProductoSeis {
+    grid-area: ofertaProductoSeis;
+}
+
+.ofertaProductos {
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 480px 480px;
+    grid-template-areas: 
+    "ofertaProductoUno ofertaProductoDos ofertaProductoTres"
+    "ofertaProductoCuatro ofertaProductoCinco ofertaProductoSeis";
+    column-gap: 100px;
+    row-gap: 75px;
+    text-align: center;
+}
+
+.ofertaProducto {
+    border: 3px solid #333;
+    background-color: #222222;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    box-shadow: 3px 3px 5px 0px whitesmoke, -3px -3px 5px 0px whitesmoke, 3px -3px 5px 0px whitesmoke, -3px 3px 5px 0px whitesmoke;
+}
+
+.ofertaProductoDos img:nth-child(1) {
+    margin-top: 50px;
+    margin-bottom: 77px;
+}
+
+.ofertaProductoCuatro img:nth-child(1) {
+    margin-top: 70px;
+    margin-bottom: 74px;
+}
+
+.ofertaProductoSeis img:nth-child(1) {
+    height: 324px;
+}
+
+.ofertaFotoProducto {
+    object-fit: contain;
+    width: 100%;
+}
+
+.ofertaTexto {
+    position: relative;
+    left: -40px;
+    bottom: 420px;
+    width: 100px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    overflow: visible;
+    border-radius: 3px;
+    color: whitesmoke;
+    background-color: red;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+}
+
+.ofertaNombreProducto {
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.ofertaPrecioProducto {
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+}
+
+.precioAnterior {
+    text-decoration: line-through;
+    font-size: 0.7rem;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.precioActual {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.iconoRegalo {
+    color: red;
+}
+
+.ofertaBtnComprar {
+    background-color: #333;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+}
+/*PSEUDOCLASES OFERTAS.HTML*/
+.ofertaBtnComprar:hover {
+    box-shadow: 
+    3px 3px 10px rgba(255, 255, 255, 0.5),
+    3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.bordeProducto:hover {
+    transform: scale(1.1);
+    box-shadow: 
+    3px 3px 15px rgba(255, 255, 255, 0.5),
+    3px -3px 15px rgba(255, 255, 255, 0.5), 
+    -3px -3px 15px rgba(255, 255, 255, 0.5), 
+    -3px 3px 15px rgba(255, 255, 255, 0.5);
+}
+
+.ofertaProducto:hover .bordeProducto,
+.bordeProducto:hover + .ofertaTexto {
+    transform: scale(1.1);
+    box-shadow: 
+    3px 3px 15px rgba(255, 255, 255, 0.5),
+    3px -3px 15px rgba(255, 255, 255, 0.5), 
+    -3px -3px 15px rgba(255, 255, 255, 0.5), 
+    -3px 3px 15px rgba(255, 255, 255, 0.5);
+}
+
+.ofertaPrecioProducto:hover .precioAnterior{
+    color: red;
+}
+
+.ofertaPrecioProducto:hover .precioActual{
+    color: red;
+}
+
+.ofertaPrecioProducto:hover .iconoRegalo {
+    color: whitesmoke;
+}
+
+.ofertaNombreProducto:hover {
+    color: red;
+}
+/*MEDIA QUERIES OFERTA.HTML*/
+@media (min-width: 1001px) and (max-width: 1433px) {
+    .ofertaProductos {
+        grid-template-columns: 330px 330px;
+        grid-template-rows: repeat(3, 480px);
+        grid-template-areas: 
+        "ofertaProductoUno ofertaProductoDos"
+        "ofertaProductoTres ofertaProductoCuatro"
+        "ofertaProductoCinco ofertaProductoSeis";
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1000px) {
+    .ofertaProductos {
+        grid-template-columns: 330px 330px;
+        grid-template-rows: repeat(3, 480px);
+        grid-template-areas: 
+        "ofertaProductoUno ofertaProductoDos"
+        "ofertaProductoTres ofertaProductoCuatro"
+        "ofertaProductoCinco ofertaProductoSeis";
+    }
+
+    .logoWppOfertas {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 621px) and (max-width: 960px) {
+    .ofertaProductos {
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 480px);
+        grid-template-areas: 
+        "ofertaProductoUno"
+        "ofertaProductoDos"
+        "ofertaProductoTres"
+        "ofertaProductoCuatro"
+        "ofertaProductoCinco"
+        "ofertaProductoSeis";
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 620px) {
+    .logoWppOfertas {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .ofertaProductos {
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 480px);
+        grid-template-areas: 
+        "ofertaProductoUno"
+        "ofertaProductoDos"
+        "ofertaProductoTres"
+        "ofertaProductoCuatro"
+        "ofertaProductoCinco"
+        "ofertaProductoSeis";
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 580px) {
+    .logoWppOfertas {
+        display: none;
+    }
+
+    .navFooterOfertas {
+        display: none;
+    }
+
+    .navFooterCelularOfertas {
+        display: inline;
+    }
+
+    .ofertaProductos {
+        grid-template-columns: 275px;
+        grid-template-rows: repeat(6, 420px);
+        grid-template-areas: 
+        "ofertaProductoUno"
+        "ofertaProductoDos"
+        "ofertaProductoTres"
+        "ofertaProductoCuatro"
+        "ofertaProductoCinco"
+        "ofertaProductoSeis";
+    }
+
+    .ofertaTexto {
+        position: relative;
+        left: -40px;
+        bottom: 370px;
+        width: 100px;
+    }
+
+    .ofertaProductoUno img:nth-child(1){
+        height: 230px;
+    }
+
+    .ofertaProductoDos img:nth-child(1){
+        height: 230px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .ofertaProductoTres img:nth-child(1) {
+        height: 230px;
+    }
+
+    .ofertaProductoCuatro img:nth-child(1) {
+        height: 230px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .ofertaProductoCinco img:nth-child(1) {
+        height: 230px;
+    }
+
+    .ofertaProductoSeis img:nth-child(1) {
+        height: 230px;
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 450px) {
+    .logoWppOfertas {
+        display: none;
+    }
+
+    .navFooterOfertas {
+        display: none;
+    }
+
+    .navFooterCelularOfertas {
+        display: inline;
+    }
+
+    .ofertaProductos {
+        grid-template-columns: 275px;
+        grid-template-rows: repeat(6, 420px);
+        grid-template-areas: 
+        "ofertaProductoUno"
+        "ofertaProductoDos"
+        "ofertaProductoTres"
+        "ofertaProductoCuatro"
+        "ofertaProductoCinco"
+        "ofertaProductoSeis";
+    }
+
+    .ofertaTexto {
+        position: relative;
+        left: -20px;
+        bottom: 370px;
+        width: 100px;
+    }
+
+    .ofertaProductoUno img:nth-child(1){
+        height: 230px;
+    }
+
+    .ofertaProductoDos img:nth-child(1){
+        height: 230px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .ofertaProductoTres img:nth-child(1) {
+        height: 230px;
+    }
+
+    .ofertaProductoCuatro img:nth-child(1) {
+        height: 230px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .ofertaProductoCinco img:nth-child(1) {
+        height: 230px;
+    }
+
+    .ofertaProductoSeis img:nth-child(1) {
+        height: 230px;
+    }
+
+    .hrrr {
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+
+    .bordeProducto:hover {
+        transform: scale(1.05);
+        box-shadow: 
+        3px 3px 15px rgba(255, 255, 255, 0.5),
+        3px -3px 15px rgba(255, 255, 255, 0.5), 
+        -3px -3px 15px rgba(255, 255, 255, 0.5), 
+        -3px 3px 15px rgba(255, 255, 255, 0.5);
+    }
+    
+    .ofertaProducto:hover .bordeProducto,
+    .bordeProducto:hover + .ofertaTexto {
+        transform: scale(1.05);
+        box-shadow: 
+            3px 3px 15px rgba(255, 255, 255, 0.5),
+            3px -3px 15px rgba(255, 255, 255, 0.5), 
+            -3px -3px 15px rgba(255, 255, 255, 0.5), 
+            -3px 3px 15px rgba(255, 255, 255, 0.5);
+    }
+}
+/*ABOUT US.HTML*/
+.logoWppAboutUs {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.navFooterCelularAboutUs {
+    display: none;
+}
+
+.containerDatosNosotros {
+    width: 100%;
+    padding-top: 50px;
+    background-color: black;
+}
+
+.hrAboutUs {
+    box-shadow: 3px 3px 5px 1px whitesmoke, -3px -3px 5px 1px whitesmoke, 3px -3px 5px 1px whitesmoke, -3px 3px 5px 1px whitesmoke;
+    background-color: whitesmoke;
+    margin-bottom: 100px;
+    color: whitesmoke;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.datosNosotros {
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 330px 330px;
+    grid-template-areas: 
+    "datoUno datoDos datoTres"
+    "datoCuatro datoCinco datoSeis";
+    text-align: center;
+    column-gap: 100px;
+    row-gap: 50px;
+    height: auto;
+}
+
+.dato {
+    height: 100px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #1F1F1F;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.tituloDato {
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.subTituloDato {
+    text-transform: uppercase;
+    display: none;
+}
+
+.textoDato {
+    display: none;
+    font-size: 0.8rem;
+}
+/*PSEUDOCLASES ABOUT US.HTML*/
+.dato:hover {
+    height: 330px;
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+
+.dato:hover .tituloDato {
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid whitesmoke;
+    box-shadow: 0px 5px 5px -5px whitesmoke;
+}
+
+.dato:hover .textoDato {
+    display: block;
+}
+
+.dato:hover .subTituloDato {
+    display: block;
+}
+/*MEDIA QUERIES ABOUT US.HTML*/
+@media (min-width: 1011px) and (max-width: 1480px) {
+    .datosNosotros{
+        grid-template-columns: 330px 330px;
+        grid-template-rows: repeat(3, 330px);
+        grid-template-areas:
+        "datoUno datoDos"
+        "datoTres datoCuatro"
+        "datoCinco datoSeis";
+    }
+
+    .logoWppAboutUs {
+        width: 75px;
+        height: 75px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1010px) {
+    .datosNosotros{
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 330px);
+        grid-template-areas:
+        "datoUno"
+        "datoDos"
+        "datoTres"
+        "datoCuatro"
+        "datoCinco"
+        "datoSeis";
+    }
+
+    .logoWppAboutUs {
+        width: 75px;
+        height: 75px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .hrAboutUs {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 760px) {
+    .datosNosotros{
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 330px);
+        grid-template-areas:
+        "datoUno"
+        "datoDos"
+        "datoTres"
+        "datoCuatro"
+        "datoCinco"
+        "datoSeis";
+    }
+
+    .navFooterAboutUs {
+        display: none;
+    }
+
+    .logoWppCelularAboutUs {
+        display: none;
+    }
+
+    .navFooterCelularAboutUs {
+        display: inline;
+    }
+
+    .hrAboutUs {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .dato:hover {
+        height: 370px;
+    }
+    .datosNosotros{
+        grid-template-columns: 270px;
+        grid-template-rows: repeat(6, 390px);
+        grid-template-areas:
+        "datoUno"
+        "datoDos"
+        "datoTres"
+        "datoCuatro"
+        "datoCinco"
+        "datoSeis";
+    }
+
+    .navFooterAboutUs {
+        display: none;
+    }
+
+    .logoWppCelularAboutUs {
+        display: none;
+    }
+
+    .navFooterCelularAboutUs {
+        display: inline;
+    }
+
+    .hrAboutUs {
+        margin-bottom: 80px;
+    }
+}
