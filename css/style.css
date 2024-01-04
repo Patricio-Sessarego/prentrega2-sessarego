@@ -393,6 +393,14 @@ footer {
     justify-content: center;
 }
 
+.listaFooter {
+    padding: 0;
+}
+
+.listaFooterCelular {
+    padding: 0;
+}
+
 .divListaFooter {
     background-color: black;
     list-style: none;
@@ -496,6 +504,7 @@ footer {
 
     .navFooterCelular {
         display: inline;
+        justify-content: center;
     }
 
     .logoWppCelular {
@@ -518,6 +527,7 @@ footer {
 
     .navFooterCelular {
         display: inline;
+        justify-content: center;
     }
 
     .logoWppCelular {
@@ -549,10 +559,14 @@ footer {
 
     .iconoWpp {
         display: inline;
+        display: flex;
+        justify-content: center;
     }
 
     .navFooterCelular {
         display: inline;
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -712,7 +726,7 @@ main {
     }
 }
 
-@media (min-width: 901px) and (max-width: 1000px) {
+@media (min-width: 961px) and (max-width: 1000px) {
     .imgCarrousel {
         width: 100%;
         height: 300px;
@@ -745,7 +759,44 @@ main {
     }
 }
 
+@media (min-width: 901px) and (max-width: 960px) {
+    .hrrr {
+        display: none;
+    }
+
+    .productos {
+        margin-top: 100px
+    }
+
+    .imgCarrousel {
+        width: 100%;
+        height: 300px;
+    }
+
+    .productos {
+        margin-top: 100px;
+        grid-template-columns: 330px 330px;
+        grid-template-rows: repeat(3, 480px);
+        grid-template-areas: 
+        "productoUno productoDos"
+        "productoTres productoCuatro"
+        "productoCinco productoSeis";
+    }
+
+    .hrFooter {
+        margin-top: 75px;
+    }
+}
+
 @media (min-width: 801px) and (max-width: 900px) {
+    .hrrr {
+        display: none;
+    }
+
+    .productos {
+        margin-top: 100px
+    }
+
     .imgCarrousel {
         width: 100%;
         height: 300px;
@@ -763,17 +814,20 @@ main {
         "productoSeis";
     }
 
-    .hrrr {
-        margin-bottom: 75px;
-        margin-top: 75px;
-    }
-
     .hrFooter {
         margin-top: 75px;
     }
 }
 
 @media (min-width: 701px) and (max-width: 800px) {
+    .hrrr {
+        display: none;
+    }
+
+    .productos {
+        margin-top: 100px
+    }
+
     .imgCarrousel {
         width: 100%;
         height: 250px;
@@ -791,17 +845,20 @@ main {
         "productoSeis";
     }
 
-    .hrrr {
-        margin-bottom: 75px;
-        margin-top: 75px;
-    }
-
     .hrFooter {
         margin-top: 75px;
     }
 }
 
 @media (min-width: 601px) and (max-width: 700px) {
+    .hrrr {
+        display: none;
+    }
+
+    .productos {
+        margin-top: 100px
+    }
+
     .imgCarrousel {
         width: 100%;
         height: 200px;
@@ -819,17 +876,20 @@ main {
         "productoSeis";
     }
 
-    .hrrr {
-        margin-bottom: 75px;
-        margin-top: 75px;
-    }
-
     .hrFooter {
         margin-top: 75px;
     }
 }
 
 @media (min-width: 501px) and (max-width: 600px) {
+    .hrrr {
+        display: none;
+    }
+
+    .productos {
+        margin-top: 100px
+    }
+
     .imgCarrousel {
         width: 100%;
         height: 150px;
@@ -847,17 +907,20 @@ main {
         "productoSeis";
     }
 
-    .hrrr {
-        margin-bottom: 75px;
-        margin-top: 75px;
-    }
-
     .hrFooter {
         margin-top: 75px;
     }
 }
 
 @media (min-width: 391px) and (max-width: 500px) {
+    .hrrr {
+        display: none;
+    }
+
+    .productos {
+        margin-top: 100px
+    }
+
     .imgCarrousel {
         width: 100%;
         height: 125px;
@@ -875,17 +938,20 @@ main {
         "productoSeis";
     }
 
-    .hrrr {
-        margin-bottom: 75px;
-        margin-top: 75px;
-    }
-
     .hrFooter {
         margin-top: 75px;
     }
 }
 
 @media (max-width: 390px) {
+    .hrrr {
+        display: none;
+    }
+
+    .productos {
+        margin-top: 75px
+    }
+
     .imgCarrousel {
         width: 100%;
         height: 100px;
@@ -927,22 +993,11 @@ main {
         height: 230px;
     }
 
-    .hrrr {
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
-
     .hrFooter {
         margin-top: 50px;
     }
 }
 /*COMPRA-PRODUCTO.HTML*/
-.hrCompraProducto {
-    background-color: black;
-    padding-top: 10px;
-    margin: 0;
-}
-
 .logoWppCompraProducto {
     position: fixed;
     bottom: 20px;
@@ -1326,6 +1381,7 @@ main {
 @media (max-width: 480px) {
     .mainContainer {
         height: 760px;
+        padding-top: 75px;
     }
 
     .gridContainer {
@@ -1410,7 +1466,7 @@ main {
 .containerPadre {
     width: 100%;
     display: grid;
-    padding-top: 125px;
+    padding-top: 115px;
     padding-bottom: 50px;
     align-content: center;
     justify-content: center;
@@ -1419,7 +1475,7 @@ main {
 
 .container {
     width: 800px;
-    height: 65vh;
+    height: 550px;
     background-color: #1F1F1F;
     border: 2px solid whitesmoke;
     box-shadow: 2px 2px 50px 5px rgba(255, 255, 255, 0.5);
@@ -2003,7 +2059,15 @@ main {
     }
 }
 
-@media (min-width: 621px) and (max-width: 960px) {
+@media (min-width: 901px) and (max-width: 960px) {
+    .hrrr {
+        display: none;
+    }
+
+    .ofertaProductos {
+        margin-top: 100px;
+    }
+
     .ofertaProductos {
         grid-template-columns: 330px;
         grid-template-rows: repeat(6, 480px);
@@ -2016,9 +2080,30 @@ main {
         "ofertaProductoSeis";
     }
 
-    .hrrr {
-        margin-bottom: 75px;
+    .hrFooter {
         margin-top: 75px;
+    }
+}
+
+@media (min-width: 621px) and (max-width: 900px) {
+    .hrrr {
+        display: none;
+    }
+
+    .ofertaProductos {
+        margin-top: 100px;
+    }
+
+    .ofertaProductos {
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 480px);
+        grid-template-areas: 
+        "ofertaProductoUno"
+        "ofertaProductoDos"
+        "ofertaProductoTres"
+        "ofertaProductoCuatro"
+        "ofertaProductoCinco"
+        "ofertaProductoSeis";
     }
 
     .hrFooter {
@@ -2027,6 +2112,14 @@ main {
 }
 
 @media (min-width: 581px) and (max-width: 620px) {
+    .hrrr {
+        display: none;
+    }
+
+    .ofertaProductos {
+        margin-top: 100px;
+    }
+
     .logoWppOfertas {
         height: 50px;
         width: 50px;
@@ -2047,17 +2140,20 @@ main {
         "ofertaProductoSeis";
     }
 
-    .hrrr {
-        margin-bottom: 75px;
-        margin-top: 75px;
-    }
-
     .hrFooter {
         margin-top: 75px;
     }
 }
 
 @media (min-width: 451px) and (max-width: 580px) {
+    .hrrr {
+        display: none;
+    }
+
+    .ofertaProductos {
+        margin-top: 100px;
+    }
+
     .logoWppOfertas {
         display: none;
     }
@@ -2117,17 +2213,19 @@ main {
         height: 230px;
     }
 
-    .hrrr {
-        margin-bottom: 75px;
-        margin-top: 75px;
-    }
-
     .hrFooter {
         margin-top: 75px;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 450px) {    .hrrr {
+        display: none;
+    }
+
+    .ofertaProductos {
+        margin-top: 75px;
+    }
+
     .logoWppOfertas {
         display: none;
     }
@@ -2187,11 +2285,6 @@ main {
         height: 230px;
     }
 
-    .hrrr {
-        margin-bottom: 75px;
-        margin-top: 75px;
-    }
-
     .hrFooter {
         margin-top: 75px;
     }
@@ -2230,17 +2323,8 @@ main {
 
 .containerDatosNosotros {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 100px;
     background-color: black;
-}
-
-.hrAboutUs {
-    box-shadow: 3px 3px 5px 1px whitesmoke, -3px -3px 5px 1px whitesmoke, 3px -3px 5px 1px whitesmoke, -3px 3px 5px 1px whitesmoke;
-    background-color: whitesmoke;
-    margin-bottom: 100px;
-    color: whitesmoke;
-    margin-right: 15%;
-    margin-left: 15%;
 }
 
 .datosNosotros {
@@ -2328,6 +2412,10 @@ main {
 }
 
 @media (min-width: 761px) and (max-width: 1010px) {
+    .containerDatosNosotros {
+        padding-top: 100px;
+    }
+
     .datosNosotros{
         grid-template-columns: 330px;
         grid-template-rows: repeat(6, 330px);
@@ -2354,6 +2442,10 @@ main {
 }
 
 @media (min-width: 501px) and (max-width: 760px) {
+    .containerDatosNosotros {
+        padding-top: 100px;
+    }
+
     .datosNosotros{
         grid-template-columns: 330px;
         grid-template-rows: repeat(6, 330px);
@@ -2384,6 +2476,10 @@ main {
 }
 
 @media (max-width: 500px) {
+    .containerDatosNosotros {
+        padding-top: 75px;
+    }
+
     .dato:hover {
         height: 370px;
     }
